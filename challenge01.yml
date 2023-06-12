@@ -1,0 +1,15 @@
+---
+- name: "Challenge 01"
+  hosts: localhost
+
+  tasks:
+    - name: "Test reachability"
+      ping:
+
+    - name: "Check files"
+      find:
+        file_type: "file"
+        path: ./challenge01
+        size:
+# To run this use this command:    ansible-playbook challenge01.yml -v
+# -v makes output visible

@@ -1,0 +1,18 @@
+---
+  - name: "Orchestration Example"
+    hosts: logicservers
+    serial: 1
+
+    tasks:
+
+    - name: "Shutting down server"
+      debug:
+      msg: "Shutting down {{ inventory_hostname}}"
+
+    - name: "Upgrade firmware"
+      debug:
+      msg: "Upgrading {{ inventory_hostname}}"
+
+    - name: "Starting server"
+      debug:
+      msg: "Starting {{ inventory_hostname}}"

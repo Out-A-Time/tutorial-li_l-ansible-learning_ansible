@@ -1,0 +1,10 @@
+[nodes]
+gb5-st-mpapi-001
+gb5-st-mpapi-002
+gb5-st-mpauthentication-001
+gb5-st-mpauthentication-002
+
+[nodes:vars]
+ansible_ssh_user=robert.maksymow
+ansible_ssh_pass=password_here
+ansible_become_pass=password_here
